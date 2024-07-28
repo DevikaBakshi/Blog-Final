@@ -1,4 +1,24 @@
+<h1>BlogiVerse</h1>h1>
+<br>
+BlogiVerse is a modern web application that allows users to create, view, edit, and delete blogs. Users can also like and comment on other blogs, providing an interactive and engaging platform for sharing ideas. Built with the MERN stack (MongoDB, Express.js, React, Node.js) and styled using Tailwind CSS, this application offers a seamless and visually appealing user experience.
+<br>
+<h3>Features</h3>
+<br>
+<ul>
+<li>User Authentication: Secure user registration and login functionality.</li>
+<li>CRUD Operations: Users can create, read, update, and delete their own blog posts.</li>
+<li>Like and Comment: Users can like and comment on blog posts.</li>
+<li>View Other Blogs: Users can view blogs posted by others and interact with them.</li>
+</ul>
+<br>
 
+<h3>Technology Stack</h3>
+<br>
+<ul>
+<li>Frontend: React.js, Tailwind CSS</li>
+<li>Backend: Node.js, Express.js</li>
+<li>Database: MongoDB</li>
+</ul>
 
 
 
