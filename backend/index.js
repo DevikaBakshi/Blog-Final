@@ -51,8 +51,11 @@ app.get("/", (req, res) => {
   res.send("Welcome!");
 });
 
-// /backend/index.js
-
+app.post("/logout", (req, res) => {
+  res.clearCookie('token', { httpOnly: true }); // Ensure all relevant flags are included
+  res.status(200).send("Logged out successfully");
+  console.log("Logged out successfully");
+});
 // Import necessary modules and setup
 
 // Register a new user
