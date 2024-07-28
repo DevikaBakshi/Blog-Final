@@ -35,14 +35,21 @@ function Home({ user }) {
 
   const handleLogout = async () => {
     try {
-      await fetch('/logout', {
-        credentials: 'include',
+      const response = await fetch('http://localhost:8000/logout', {
+        method: 'POST',
+        credentials: 'include', // This ensures that cookies are included in the request
       });
-      navigate('/');
+  
+      if (response.ok) {
+        navigate('/'); // Redirect to the home page or login page after logging out
+      } else {
+        console.error('Logout failed');
+      }
     } catch (error) {
       console.error('Error logging out:', error);
     }
   };
+  
 
   return (
     <div className="min-h-screen flex flex-col bg-purple-100">
